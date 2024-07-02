@@ -1,9 +1,18 @@
 {
   "name": "dij-client",
   "version": "0.0.0",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farchettiensis/dij-app/tree/main/dij-client"
+  },
+  "author": "Fernando Belmonte Archetti",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "sass": "sass src:src --source-map",
+    "start": "node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve --host=127.0.0.1 --port=4202",
+    "start2": "node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve --host=127.0.0.1 --port=4300",
+    "start3": "node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve --host=127.0.0.1 --port=4600",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,6 +27,9 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.2",
+    "primeflex": "^3.3.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

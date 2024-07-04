@@ -8,7 +8,7 @@
 /bazel-out
 
 # Dependency directories
-node_modules/
+/node_modules
 jspm_packages/
 
 # IDEs and editors
@@ -33,11 +33,12 @@ vscode/*
 
 # Miscellaneous
 /package-lock.json
+package-lock.json
+yarn.lock
 /.angular/cache
+.sass-cache/
 /connect.lock
 /coverage
-/libpeerconnection.log
-testem.log
 /typings
 
 # System files
@@ -58,6 +59,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
+/libpeerconnection.log
+testem.log
 
 # Runtime data
 pids

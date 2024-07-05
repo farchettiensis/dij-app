@@ -21,6 +21,7 @@ jspm_packages/
 *.launch
 .settings/
 *.sublime-workspace
+.vscode/settings.json
 
 # Visual Studio Code
 vscode/*
